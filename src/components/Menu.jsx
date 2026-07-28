@@ -107,7 +107,7 @@ const Menu = () => {
       <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-amber-900/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-amber-950/5 rounded-full blur-3xl pointer-events-none" />
 
-      <div className='max-w-7xl mx-auto px-6 md:px-0'>
+      <div className='max-w-7xl mx-auto px-6 md:px-12'>
         {/* Heading section */}
         <div className='text-center mb-16 space-y-4'>
             <motion.h1 
@@ -165,13 +165,13 @@ const Menu = () => {
                         exit={{ opacity: 0, scale: 0.9 }}
                         transition={{ duration: 0.4 }}
                         key={menu.id}
-                        className='rounded-2xl bg-[#120805] hover:bg-[#1c0e09] border border-amber-950/30 hover:border-amber-900/40 transition-all duration-300 relative shadow-xl flex flex-col justify-between group overflow-hidden p-5 pt-14'
+                        className='rounded-2xl bg-[#120805] hover:bg-[#1c0e09] border border-amber-950/30 hover:border-amber-900/40 transition-all duration-300 relative shadow-xl flex flex-col justify-between group p-5 pt-24'
                     >
                         {/* Circle overlay element on hover */}
                         <div className="absolute top-0 right-0 w-24 h-24 bg-amber-900/10 rounded-full blur-2xl group-hover:bg-amber-900/20 transition-all duration-500" />
                         
                         {/* Image area */}
-                        <div className='absolute -top-10 left-1/2 transform -translate-x-1/2 h-24 w-full flex justify-center z-10'>
+                        <div className='absolute -top-12 left-1/2 transform -translate-x-1/2 h-36 w-full flex justify-center z-10'>
                             <img 
                                 src={menu.img} 
                                 alt={menu.name} 
